@@ -1,0 +1,71 @@
+.panel {
+	position: relative;
+	border-radius: 1px;
+	background-color: rgba(26, 26, 26, 0.9);
+	background-color: #191919;
+	border: 1px solid rgba(46, 46, 46, .3);
+	> header {
+		position: relative;
+		height: 60px;
+		background: #2e2e2d;
+		background-image: linear-gradient(to top,rgba(46,46,46,.9) 0,rgba(46,46,46,.9) 100%);
+		padding: 19px 22px 0 22px;
+		border-radius: 1px;
+		font-family: $font-family-bold-italic;
+		border-bottom: 1px solid #212121;
+		> .loader {
+			display: block;
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			right: 24px;
+			top: 22px;
+			background-image: url(img/refresh-round-symbol.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100%;
+		}
+		> h1, > h2, > h3{
+			color: #ccc;
+			padding: 0 0;
+			margin: 0 0;
+			line-height: 1;
+			font-weight: inherit;
+		}
+		> .nav{
+			padding: 0 0;
+			margin: 0 0;
+			list-style: none;
+			line-height: 1;
+			li{
+				display: inline-block;
+				padding: 0 0;
+				margin: 0 15px 0 0;
+				list-style: none;
+				> a {
+					color: #7a7a7a;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 22px;
+					&:hover, &:focus, &:active, &.active{
+						color: #ccc;
+					}
+				}
+			}
+		}
+	}
+	> .panel-body{
+		padding: 12px;
+	}
+	.btn-all{
+		@include btn();
+		display: block;
+		margin: 0 auto;
+		font-size: 16px;
+		border-radius: 1px;
+		background-image: linear-gradient( 90deg, rgb(34,81,122) 0%, rgb(43,102,153) 100%);
+		color: rgb(255, 255, 255);
+		margin: 8px auto;
+		border: 0px solid #2e2e2e;
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "themebuild",
+  "description": "html/wp theme tpl",
+  "main": "index.js",
+  "authors": [
+    "maxkv333"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "landingfarm.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+	"dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+	}
+}

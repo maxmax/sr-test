@@ -1,0 +1,171 @@
+//
+// Variables
+// --------------------------------------------------
+$basecolor: #ccc;
+//$basebg: #091119;
+$basebg: #0f0f0f;
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: url('fonts/robotocondensed/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: url('fonts/robotocondensed/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-BoldItalic';
+  src: url('fonts/robotocondensed/RobotoCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Italic';
+  src: url('fonts/robotocondensed/RobotoCondensed-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-reg: 'RobotoCondensed-Regular', TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+$font-family-bold: 'RobotoCondensed-Bold', TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+$font-family-bold-italic: 'RobotoCondensed-BoldItalic', TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+$font-family-italic: 'RobotoCondensed-Italic', TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin defmode() {
+	font-family: $font-family-reg;
+	background: $basebg;
+	//height: 100vh;
+	box-sizing: border-box;
+	position: relative;
+  padding-bottom: 145px;
+	b, strong, .bold{
+		font-family: $font-family-bold;
+	}
+	*, *:before, *:after {
+	  box-sizing: inherit;
+	}
+}
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 09/09/2016 11:50
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("fonts/iconfont/Flaticon.eot");
+  src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/iconfont/Flaticon.woff") format("woff"),
+       url("fonts/iconfont/Flaticon.ttf") format("truetype"),
+       url("fonts/iconfont/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("fonts/iconfont/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-clear-button:before { content: "\f100"; }
+.flaticon-facebook-letter-logo:before { content: "\f101"; }
+.flaticon-locked-padlock:before { content: "\f102"; }
+.flaticon-mail-black-envelope-symbol:before { content: "\f103"; }
+.flaticon-odnoklassniki-logo:before { content: "\f104"; }
+.flaticon-sound:before { content: "\f105"; }
+.flaticon-vk-social-network-logo:before { content: "\f106"; }
+.flaticon-volume-off-indicator:before { content: "\f107"; }
+
+//main
+@mixin main {
+  background: #0f0f0f;
+  padding-top: 35px;
+}
+
+//grid
+@mixin container {
+  position: relative;
+	margin: 0 auto;
+	padding: 0 24px;
+	width:  1176px;
+	max-width: 100%;
+	box-sizing: border-box;
+	//border: 1px solid green;
+}
+
+@mixin row {
+  //border: 1px solid red;
+  position: relative;
+  margin-left: -12px;
+  margin-right: -12px;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+    float: none;
+  }
+}
+
+@mixin col-1 {
+  display: block;
+  padding: 0 12px;
+  width: 100%;
+  float: none;
+}
+
+@mixin col-2 {
+  display: block;
+  padding: 0 12px;
+  width: 50%;
+  float: left;
+}
+
+@mixin col-3 {
+  display: block;
+  padding: 0 12px;
+  width: 33.33333333%;
+  float: left;
+}
+//end grid
+
+
+//btn
+
+@mixin btn {
+  display: inline-block;
+  padding: 6px 24px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background: #296496;
+}

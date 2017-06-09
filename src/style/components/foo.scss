@@ -1,0 +1,20 @@
+.foo {
+	@include container();
+	margin-top: 24px;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	background-image: linear-gradient(to left, rgba(46,41,24,0) 0%, rgba(46,41,24,.7) 50%, rgba(46,41,24,0) 100%);
+	font-size: 15px;
+	color: #998e62;
+	.attention{
+		display: inline-block;
+		width: 16px;
+		height: 14px;
+		margin-right: 10px;
+		background-image: url(img/attention.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+	}
+}

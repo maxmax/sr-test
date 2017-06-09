@@ -1,0 +1,15 @@
+//var
+@import "variable";
+@import "base";
+.landing-app{
+  @include defmode();
+  @import "components/navigation";
+  @import "components/bar";
+  @import "components/jumbotron";
+  @import "components/content";
+  @import "components/panel";
+  @import "components/thumbs";
+  @import "components/qust";
+  @import "components/infotable";
+  @import "components/foo";
+}

@@ -1,0 +1,87 @@
+.questsy{
+  > div{
+    background-color: rgba(46, 46, 46, .9);
+    border-radius: 1px;
+    margin-bottom: 12px;
+    > div{
+      position: relative;
+      min-height: 60px;
+      vertical-align: middle;
+      border-radius: 1px;
+      background: linear-gradient(to right, rgba(124,175,57,.3) 0%,rgba(124,175,57,0) 60%);
+      padding-right: 120px;
+      padding-left: 70px;
+      padding-top: 21px;
+      padding-bottom: 20px;
+      .text{
+        line-height: 1;
+      }
+      &.steam{
+        //.icon{}
+      }
+      &.facebook{
+        background: linear-gradient(to right, rgba(59,89,152,.3) 0%,rgba(59,89,152,0) 60%);
+        .icon{
+          background-image: url(img/facebook-logo.svg);
+          background-size: 90%;
+        }
+      }
+      &.vk{
+        background: linear-gradient(to right, rgba(69,102,142,.3) 0%,rgba(69,102,142,0) 60%);
+        .icon{
+          background-image: url(img/vk.svg);
+        }
+      }
+      &.hell-steam{
+        background: linear-gradient(to right, rgba(0,173,238,.3) 0%,rgba(0,173,238,0) 60%);
+      }
+      &.twitch{
+        background: linear-gradient(to right, rgba(100,65,165,.3) 0%,rgba(100,65,165,0) 60%);
+        .icon{
+          background-image: url(img/twitch.svg);
+          background-size: 80%;
+        }
+      }
+      &.active{
+        .label{
+          background-image: none;
+          background-color: rgb(96, 122, 34);
+          cursor: inherit;
+        }
+      }
+    }
+    .icon{
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 20px;
+      margin-bottom: -7px;
+      background-image: url(img/steam.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100%;
+      //
+      position: absolute;
+      top: 18px;
+      left: 0px;
+    }
+    .label{
+      position: absolute;
+      top: 18px;
+      right: 12px;
+      font-size: 13px;
+      line-height: 24px;
+      height: 24px;
+      width: 96px;
+      text-align: center;
+      color: white;
+      border-radius: 1px;
+      background-image: linear-gradient( to top, rgb(34,81,122) 0%, rgb(43,102,153) 100%);
+      cursor: pointer;
+    }
+  }
+  & + .info-table{
+    margin-top: -24px;
+  }
+}

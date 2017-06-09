@@ -1,0 +1,51 @@
+.info-table{
+  > section{
+    border: 1px solid #2e2e2e;
+    > header{
+      position: relative;
+      height: 36px;
+      background: #2e2e2e;
+      line-height: 1;
+      padding: 10px 18px;
+      font-family: $font-family-bold-italic;
+      font-size: 17px;
+      text-transform: uppercase;
+      border-radius: 1px;
+      padding-right: 130px;
+      .right{
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        font-family: $font-family-reg;
+        font-size: 15px;
+        color: #999;
+        position: absolute;
+        top: 0;
+        right: 22px;
+        text-transform: capitalize;
+      }
+    }
+    > div{
+      padding: 12px 18px;
+      position: relative;
+      > ul{
+        padding: 0 80px 0 18px;
+        margin: 0 0;
+        > li{
+          margin-bottom: 2px;
+        }
+      }
+      > .value{
+        font-family: $font-family-bold-italic;
+        font-size: 35px;
+        height: 60px;
+        line-height: 60px;
+        padding-right: 25px;
+        color: #ccc;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "sr-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maxkv333",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.3.3",
+    "imagemin-pngquant": "^4.2.2",
+    "rimraf": "^2.5.2",
+    "gulp-php2html": "^0.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "1.0.0"
+  }
+}
