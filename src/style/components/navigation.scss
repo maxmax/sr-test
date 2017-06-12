@@ -13,12 +13,13 @@
   }
   .nav{
     display: block;
-    padding: 0 22px;
+    padding: 0 25px;
     margin: 0;
     list-style: none;
     float: left;
     &.right{
       float: right;
+      padding-right: 6px;
     }
     > li{
       display: inline-block;
@@ -45,10 +46,10 @@
   }
   .brand{
     display: inline-block;
-    padding: 16px 22px;
+    padding: 12px 22px 10px 22px;
     color: #fff;
     font-family: $font-family-bold-italic;
-    font-size: 24px;
+    font-size: 34px;
     text-decoration: none;
     text-transform: uppercase;
   }

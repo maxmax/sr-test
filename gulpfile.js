@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
+var path = require('path');
 var ghpages = require('gh-pages');
 
 var path = {
@@ -150,6 +151,6 @@ gulp.task('watch', function(){
 gulp.task('default', ['build', 'webserver', 'watch']);
 
 gulp.task('deploy', function() {
-    return gulp.src('./public/**/*')
+    return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
